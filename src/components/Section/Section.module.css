@@ -1,0 +1,14 @@
+.reviews {
+  width: 500px;
+  margin: 50px auto;
+  border: 1px solid grey;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.reviews:hover {
+  box-shadow: 0 7px 15px rgba(84, 236, 224, 0.568);
+}
