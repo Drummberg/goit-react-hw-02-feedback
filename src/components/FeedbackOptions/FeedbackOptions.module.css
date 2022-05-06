@@ -5,15 +5,11 @@
   text-transform: capitalize;
   font-weight: bold;
   cursor: pointer;
-}
-
-.button:not(:last-child) {
   margin-right: 10px;
 }
 
-.button :hover,
-:focus {
-  background-color: teal;
+.button:hover {
+  background-color: rgb(179, 193, 18);
   color: white;
   transition: all 0.2s;
 }
