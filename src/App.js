@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Section from './components/Section/Section';
+import Notification from './components/Notification/Notification';
 
 class App extends Component {
   state = {
@@ -9,9 +10,13 @@ class App extends Component {
   };
 
   render() {
+    const { good, neutral, bad } = this.state;
+    const options = Object.keys(this.state);
+
     return (
       <>
         <Section title="Please leave feedback" />
+        <Notification message="There is no feedback" />
       </>
     );
   }
