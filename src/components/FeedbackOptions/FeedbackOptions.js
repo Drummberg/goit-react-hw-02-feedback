@@ -8,10 +8,10 @@ const FeedbackOptions = ({ options, onBtnClick }) => {
       {options.map(option => {
         return (
           <button
-            className={styles.button}
             type="button"
             key={option}
             onClick={() => onBtnClick(option)}
+            className={styles.button}
           >
             {option}
           </button>
@@ -22,7 +22,7 @@ const FeedbackOptions = ({ options, onBtnClick }) => {
 };
 
 FeedbackOptions.propTypes = {
-  options: PropTypes.array.isRequired,
+  options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
   onBtnClick: PropTypes.func.isRequired,
 };
 

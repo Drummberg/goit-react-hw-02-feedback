@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const Section = ({ title, children }) => {
   return (
     <section className={styles.reviews}>
-      <h2>{title}</h2>
+      <h2 className={styles.title}>{title}</h2>
       {children}
     </section>
   );
@@ -13,7 +13,7 @@ const Section = ({ title, children }) => {
 
 Section.propTypes = {
   title: PropTypes.string.isRequired,
-  children: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
+  children: PropTypes.element,
 };
 
 export default Section;
